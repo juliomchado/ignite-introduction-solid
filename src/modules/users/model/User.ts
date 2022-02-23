@@ -13,7 +13,7 @@ class User {
 
   updated_at: Date;
 
-  constructor(name: string, email: string) {
+  constructor(name?: string, email?: string) {
     if (!this.id) {
       this.id = uuidV4();
       this.name = name;
